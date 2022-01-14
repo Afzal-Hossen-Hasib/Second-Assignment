@@ -11,3 +11,105 @@
 body {
   font-family: "Poppins", sans-serif;
 }
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+/* Navigation Style  */
+nav {
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navigation {
+  display: flex;
+}
+
+.navigation li {
+  list-style: none;
+  margin: 0 34px;
+}
+
+.navigation li a {
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+}
+
+.Navigation-title p {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.icon-title {
+  font-size: 16px;
+}
+
+/* Influencer Style  */
+.influencer {
+  margin-top: 80px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+}
+
+.influencer-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.influencer-details p {
+  font-size: 16px;
+  margin: 20px 0;
+}
+
+.influencer-title {
+  font-weight: 700;
+  font-size: 52px;
+}
+
+.influencer-image {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  overflow: hidden;
+}
+.influencer-image img {
+  width: 440px;
+  height: 414px;
+}
+
+.influencer-button {
+  outline: 0;
+  border: 0;
+  background: #e02c6d;
+  border-radius: 41px;
+  font-size: 16px;
+  padding: 10px 24px;
+  cursor: pointer;
+}
+
+.influencer-image:hover img {
+  transform: scale(1.5) rotate(360deg);
+  transition: transform 3s ease-out;
+}
+
+/* logo Style  */
+
+.logos {
+  align-items: center;
+  width: 1200px;
+  height: 100px;
+  border-bottom: 2px solid rgb(223, 221, 221);
+  border-top: 2px solid rgb(223, 221, 221);
+  margin: 100px 0;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+}
