@@ -16,7 +16,7 @@ body {
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
   padding: 0 30px;
 }
@@ -24,10 +24,13 @@ body {
 /* ----------------------------------------------
 -----------------Navigation Style----------------  */
 nav {
+  width: 95%;
   height: 80px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin: 0 auto;
+  margin-bottom: 80px;
 }
 
 .navigation {
@@ -57,7 +60,9 @@ nav {
 /* ----------------------------------------------
 -----------------Influencer Style----------------  */
 .influencer {
-  margin-top: 80px;
+  width: 90%;
+  margin: 0 auto;
+  padding-bottom: 80px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
@@ -110,11 +115,11 @@ nav {
 -----------------logo Style----------------  */
 .logos {
   align-items: center;
-  width: 1200px;
+  width: 90%;
   height: 100px;
   border-bottom: 2px solid rgb(223, 221, 221);
   border-top: 2px solid rgb(223, 221, 221);
-  margin: 100px 0;
+  margin: 100px auto;
   display: grid;
   grid-template-columns: repeat(7, 1fr);
 }
@@ -122,7 +127,7 @@ nav {
 /* -------------------------------------------------
 -----------------popular-collection style-----------  */
 .popular-section {
-  width: 1047px;
+  width: 90%;
   margin: 0 auto;
 }
 
@@ -195,7 +200,7 @@ span {
 /* -------------------------------------------------
 -----------------Offer Section Style-----------  */
 .offer-section {
-  width: 1000px;
+  width: 90%;
   height: 310px;
   display: flex;
   justify-content: space-between;
@@ -203,7 +208,8 @@ span {
   background-color: #e3eeec;
   border-radius: 20px;
   box-shadow: 2px 2px 12px rgba(230, 238, 236, 0.2);
-  margin: 200px 100px auto;
+  margin: 0 auto;
+  margin-top: 100px;
   padding: 5px 5px;
 }
 
@@ -283,11 +289,7 @@ footer {
 
 /* -------------------------------------------------
 -----------------Responsive Style----------------------  */
-@media screen and (max-width: 688px) {
-  /* .container {
-    width: 100%;
-  } */
-
+@media screen and (max-width: 576px) {
   .influencer {
     grid-template-columns: 1fr;
     height: fit-content;
@@ -296,15 +298,63 @@ footer {
   .influencer-details {
     order: 2;
     align-items: center;
-    /* margin: 0 auto; */
   }
+
+  .influencer-image img {
+    width: 300px;
+    height: 300px;
+  }
+
   .popular-section {
     text-align: center;
+    width: 80%;
   }
   .popular-collection {
-    width: 600px;
     grid-template-columns: 1fr;
     align-items: center;
     justify-content: center;
+  }
+
+  .offer-section {
+    width: 90%;
+    height: 200px;
+  }
+
+  .offer-image img {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+  }
+
+  .offer-details h4 {
+    font-size: 20px;
+  }
+
+  .offer-details h2 {
+    font-size: 30px;
+  }
+
+  .percentage {
+    font-size: 20px;
+    color: #e02c6d;
+  }
+  .promo-code {
+    font-size: 20px;
+    color: #e02c6d;
+  }
+
+  .logos {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .influencer-details p {
+    font-size: 15px;
+    margin: 20px 0;
+  }
+
+  .influencer-title {
+    font-weight: 700;
+    font-size: 40px;
+    text-align: center;
   }
 }
