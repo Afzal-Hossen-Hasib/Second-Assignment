@@ -288,7 +288,7 @@ footer {
 }
 
 /* -------------------------------------------------
------------------Responsive Style----------------------  */
+-----------------Mobile Responsive Style----------------------  */
 @media screen and (max-width: 576px) {
   .influencer {
     grid-template-columns: 1fr;
@@ -356,5 +356,69 @@ footer {
     font-weight: 700;
     font-size: 40px;
     text-align: center;
+  }
+}
+
+/* -------------------------------------------------
+-----------------Tblet Responsive Style----------------------  */
+
+@media screen and (min-width: 577px) and (max-width: 768px) {
+  .popular-collection {
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-content: center;
+  }
+
+  .influencer-details p {
+    font-size: 15px;
+    margin: 20px 0;
+  }
+
+  .influencer-title {
+    font-weight: 700;
+    font-size: 30px;
+  }
+
+  .influencer-image img {
+    width: 90%;
+    height: 90%;
+  }
+
+  .offer-details {
+    width: 80%;
+  }
+
+  .offer-image img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .offer-image {
+    width: 80%;
+    text-align: center;
+  }
+  .offer-details h4 {
+    font-size: 20px;
+  }
+
+  .offer-details h2 {
+    font-size: 30px;
+  }
+
+  .percentage {
+    font-size: 40px;
+    color: #e02c6d;
+  }
+  .promo-code {
+    font-size: 20px;
+    color: #e02c6d;
+  }
+
+  .logos {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  footer {
+    width: 105%;
   }
 }
