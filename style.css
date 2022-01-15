@@ -1,13 +1,16 @@
-/* Font Link  */
+/* -----------------------------------
+--------------Font Link--------------- */
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+/* ----------------------------------------------
+----------------Common Style---------------------  */
 
 * {
   margin: 0;
   padding: 0;
 }
 
-/* Common Style  */
 body {
   font-family: "Poppins", sans-serif;
 }
@@ -18,7 +21,8 @@ body {
   padding: 0 30px;
 }
 
-/* Navigation Style  */
+/* ----------------------------------------------
+-----------------Navigation Style----------------  */
 nav {
   height: 80px;
   display: flex;
@@ -50,7 +54,8 @@ nav {
   font-size: 16px;
 }
 
-/* Influencer Style  */
+/* ----------------------------------------------
+-----------------Influencer Style----------------  */
 .influencer {
   margin-top: 80px;
   display: grid;
@@ -101,8 +106,8 @@ nav {
   transition: transform 3s ease-out;
 }
 
-/* logo Style  */
-
+/* ----------------------------------------------
+-----------------logo Style----------------  */
 .logos {
   align-items: center;
   width: 1200px;
@@ -114,8 +119,8 @@ nav {
   grid-template-columns: repeat(7, 1fr);
 }
 
-/* popular-collection style  */
-
+/* -------------------------------------------------
+-----------------popular-collection style-----------  */
 .popular-section {
   width: 1047px;
   margin: 0 auto;
@@ -187,9 +192,52 @@ span {
   float: right;
 }
 
-/* Footer Style  */
+/* -------------------------------------------------
+-----------------Offer Section Style-----------  */
+.offer-section {
+  width: 1000px;
+  height: 310px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #e3eeec;
+  border-radius: 20px;
+  box-shadow: 2px 2px 12px rgba(230, 238, 236, 0.2);
+  margin: 200px 100px auto;
+  padding: 5px 5px;
+}
+
+.offer-image img {
+  width: 450px;
+  height: 300px;
+  border-radius: 20px;
+}
+
+.offer-details {
+  margin-right: 50px;
+}
+
+.offer-details h4 {
+  font-size: 40px;
+}
+
+.offer-details h2 {
+  font-size: 80px;
+}
+
+.percentage {
+  font-size: 80px;
+  color: #e02c6d;
+}
+.promo-code {
+  font-size: 40px;
+  color: #e02c6d;
+}
+
+/* -------------------------------------------------
+-----------------Footer Style----------------------  */
 footer {
-  margin-top: 200px;
+  margin-top: 100px;
   background-color: #0b0730;
   height: auto;
   padding: 40px 0;
@@ -231,4 +279,32 @@ footer {
   text-decoration: none;
   font-size: 25px;
   color: #ffffff;
+}
+
+/* -------------------------------------------------
+-----------------Responsive Style----------------------  */
+@media screen and (max-width: 688px) {
+  /* .container {
+    width: 100%;
+  } */
+
+  .influencer {
+    grid-template-columns: 1fr;
+    height: fit-content;
+  }
+
+  .influencer-details {
+    order: 2;
+    align-items: center;
+    /* margin: 0 auto; */
+  }
+  .popular-section {
+    text-align: center;
+  }
+  .popular-collection {
+    width: 600px;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-content: center;
+  }
 }
